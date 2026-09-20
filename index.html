@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Vikash Kumar, MCA student from Hajipur, Bihar. Portfolio.">
+<title>Vikash Kumar | MCA student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#about">Skip to content</a>
+<noscript><p style="padding:1rem;margin:0">This portfolio uses JavaScript for its animations and contact details. Please turn it on.</p></noscript>
+<nav class="nav" aria-label="Page sections">
+  <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section class="hero A" id="top" aria-label="Introduction">
+  <canvas id="gl" aria-hidden="true"></canvas>
+
+  <div class="col">
+    <h1 class="name">Vikash<br>Kumar</h1>
+    <p class="tag">MCA student from Hajipur, Bihar.</p>
+    <p class="tag2">
+      <span class="sr">I write code in C, C++, Java, Python, HTML, CSS and JavaScript.</span>
+      <span aria-hidden="true">I write code in <span class="typed" id="typed"></span><span class="caret"></span></span>
+    </p>
+    <p class="cta"><a class="btn" href="#projects">See my projects</a><a class="btn alt" href="#contact">Get in touch</a></p>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="pend" id="pend">
+      <div class="strap" aria-hidden="true"><span id="strapTxt"></span></div>
+      <div class="clip" aria-hidden="true"></div>
+      <div class="card" id="card" role="button" tabindex="0" aria-pressed="false" aria-label="Vikash's ID card. Press Enter to flip it over. You can also drag it to make it swing.">
+        <div class="face front">
+          <span class="notch"></span>
+          <img class="ph" alt="Vikash Kumar standing in an exhibition hall, wearing a blue checked shirt and an ID lanyard" src="images/vikash.jpeg" draggable="false">
+          <div class="info">
+            <div class="nm">Vikash Kumar</div>
+            <div class="rl">MCA student</div>
+            <div class="ct">Hajipur, Bihar</div>
+          </div>
+          <span class="gloss" id="gloss"></span>
+        </div>
+        <div class="face back">
+          <span class="notch"></span>
+          <div class="bk">
+            <p class="k">From</p><p class="v">Hajipur, Bihar</p>
+            <p class="k">Languages</p><p class="v">English, Hindi</p>
+            <p class="k">Studying</p><p class="v">MCA, G.N.I.O.T</p>
+            <p class="k">Completed</p><p class="v">BCA, 2026</p>
+          </div>
+          <div class="barcode" id="barcode" aria-hidden="true"></div>
+          <p class="flipnote">Tap to flip back</p>
+        </div>
+      </div>
+    </div>
+    <p class="hint" id="hint">Drag the card. Tap it to flip.</p>
+  </div>
+
+  <div class="tape" aria-hidden="true"><div class="tape-in" id="tape"></div></div>
+</section>
+
+<section class="story B" id="about" aria-labelledby="h-about">
+  <div class="pin">
+    <div class="wrap">
+      <h2 id="h-about">About me</h2>
+      <p class="reveal" id="reveal">Hi, I’m Vikash Kumar, an MCA student passionate about technology and software development. I enjoy turning ideas into practical, user-friendly digital solutions. I’m continuously exploring modern technologies, strengthening my skills, and building projects that create real-world impact.</p>
+      <dl class="facts">
+        <div><dt>From</dt><dd>Hajipur, Bihar</dd></div>
+        <div><dt>Languages</dt><dd>English, Hindi</dd></div>
+        <div><dt>Studying</dt><dd>MCA</dd></div>
+        <div><dt>Completed</dt><dd>BCA</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="band A" id="education" aria-labelledby="h-edu">
+  <div class="wrap two">
+    <h2 id="h-edu">Education</h2>
+    <ol class="tl">
+      <li>
+        <div>
+          <h3>Master of Computer Applications <span class="pill on">In progress</span></h3>
+          <p><strong>G.N.I.O.T</strong><br>University: AKTU<br>2026 to 2028 (expected)</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Bachelor of Computer Applications <span class="pill">Completed</span></h3>
+          <p><strong>R.N. College, Hajipur</strong><br>University: B.R.A.B.U<br>Completed in 2026</p>
+        </div>
+        <div class="dial" style="--p:70" data-p="70" role="img" aria-label="70 percent in BCA"><svg viewBox="0 0 80 80" aria-hidden="true"><circle class="trk" cx="40" cy="40" r="34"/><circle class="bar" cx="40" cy="40" r="34"/></svg><span class="num">70%</span></div>
+      </li>
+      <li>
+        <div>
+          <h3>Class 12</h3>
+          <p><strong>S.M. Inter College</strong><br>Board: BSEB<br>Passed in 2022</p>
+        </div>
+        <div class="dial" style="--p:62" data-p="62" role="img" aria-label="62 percent in class 12"><svg viewBox="0 0 80 80" aria-hidden="true"><circle class="trk" cx="40" cy="40" r="34"/><circle class="bar" cx="40" cy="40" r="34"/></svg><span class="num">62%</span></div>
+      </li>
+      <li>
+        <div>
+          <h3>Class 10</h3>
+          <p><strong>Vidya Niketan, Mahnar</strong><br>Board: CBSE<br>Passed in 2020</p>
+        </div>
+        <div class="dial" style="--p:63" data-p="63" role="img" aria-label="63 percent in class 10"><svg viewBox="0 0 80 80" aria-hidden="true"><circle class="trk" cx="40" cy="40" r="34"/><circle class="bar" cx="40" cy="40" r="34"/></svg><span class="num">63%</span></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band B" id="skills" aria-labelledby="h-skills">
+  <div class="wrap two">
+    <div>
+      <h2 id="h-skills">Skills</h2>
+      <p>The languages I write code in, and the web basics I build with. Drag the globe to spin it.</p>
+      <ul class="sr"><li>C</li><li>C++</li><li>Java</li><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+    </div>
+    <div class="globe" id="globe" aria-hidden="true">
+      <canvas id="gcv"></canvas>
+      <div class="core">VK</div>
+    </div>
+  </div>
+</section>
+
+<section class="band A" id="projects" aria-labelledby="h-proj">
+  <div class="wrap">
+    <h2 id="h-proj">Projects</h2>
+    <p class="mute">Three working projects. Open any of them and use it right here.</p>
+    <div class="projects">
+      <article class="proj">
+        <h3>Algorithm Visualizer</h3>
+        <div>
+          <p class="mute">Watch five sorting algorithms work step by step. Change the number of bars and the speed, and compare how many comparisons and writes each one needs on the same data.</p>
+          <span class="chip">JavaScript</span><span class="chip">HTML5 Canvas</span><span class="chip">Data structures and algorithms</span>
+          <p class="cta"><button class="btn" type="button" data-demo="sort">Try it live</button></p>
+        </div>
+      </article>
+      <article class="proj">
+        <h3>Path Finder</h3>
+        <div>
+          <p class="mute">Draw walls on a grid and watch breadth-first search, A* and depth-first search look for a route from start to goal. See how many cells each one checks and how long the path is.</p>
+          <span class="chip">JavaScript</span><span class="chip">HTML5 Canvas</span><span class="chip">Graph algorithms</span>
+          <p class="cta"><button class="btn" type="button" data-demo="path">Try it live</button></p>
+        </div>
+      </article>
+      <article class="proj">
+        <h3>Expense Tracker</h3>
+        <div>
+          <p class="mute">Record income and spending in rupees, see a category chart and your balance, and keep your data in the browser so it is still there next time.</p>
+          <span class="chip">JavaScript</span><span class="chip">localStorage</span><span class="chip">Canvas charts</span>
+          <p class="cta"><button class="btn" type="button" data-demo="exp">Try it live</button></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band B" id="contact" aria-labelledby="h-contact">
+  <div class="wrap">
+    <h2 class="big" id="h-contact">Let's talk.</h2>
+    <p>Have an opportunity, a project idea or a question? Send me a message or give me a call.</p>
+    <div class="reach">
+      <div><span class="k">Email</span><a id="cEmail" href="#contact">Turn on JavaScript to see my email.</a></div>
+      <div><span class="k">Phone</span><a id="cTel" href="#contact">Turn on JavaScript to see my number.</a></div>
+    </div>
+    <p class="cta">
+      <a class="btn alt soon" id="cGit" aria-disabled="true">GitHub <small>coming soon</small></a>
+      <a class="btn alt soon" id="cIn" aria-disabled="true" href="https://www.linkedin.com/in/vikash-kumar-893a28401?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn </a>
+    </p>
+    <p class="foot">&copy; 2026 Vikash Kumar</p>
+  </div>
+</section>
+
+</main>
+
+<dialog class="B" id="demo" aria-labelledby="demoTitle">
+  <div class="dinner">
+    <div class="dhead"><h2 id="demoTitle">Demo</h2><button type="button" class="dbtn alt" id="demoClose">Close</button></div>
+    <div id="demoBody"></div>
+  </div>
+</dialog>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
